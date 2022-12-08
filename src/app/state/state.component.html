@@ -1,0 +1,9 @@
+<h1>All zipcodes for {{state}}</h1>
+
+<ul>
+    <li *ngFor="let zipcode of zipcodes">
+        <a [routerLink]="['./', 'zipcode', zipcode]">
+            {{zipcode}}
+        </a>
+    </li>
+</ul>

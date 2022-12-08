@@ -1,0 +1,7 @@
+<h1>AGI Information for {{state}}, Zipcode {{zipcode}}</h1>
+
+<ul *ngIf="zipcodeDetails">
+    <li *ngFor="let agi of zipcodeDetails">
+        {{agi | json}}
+    </li>
+</ul>
